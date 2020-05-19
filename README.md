@@ -8,3 +8,11 @@ With EncryptionWizard (and probably others) you can use your public and private 
 But, in general, it would be preferred to have your certificates inside a smartcard. That way, your certificates are always safe inside the card, they never have to be transmitted to RAM or disk, avoiding the risk of them being hijacked by an eavesdropper. 
 
 Unfotunately, if you are the proud owner of a FNMT-CERES crypto card... it does not work!
+
+Create Java jar libraries from AutoFirma:
+
+```
+AutoFirma$ jar -cvfe keystores.jar keystores es/gob/afirma/keystores
+
+AutoFirma$ jar -cvfe jmulticard.jar jmulticard es/gob/jmulticard
+```
